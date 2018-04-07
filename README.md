@@ -1,5 +1,4 @@
-# Hadoop
-Problem on Hadoop (HDFS, MapReduce, HIVE, PIG, SQOOP, OOZIE, ZooKeeper)
+## Hadoop
 
 ## Getting Started with Hadoop
 
