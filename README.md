@@ -1,23 +1,28 @@
-## Hadoop
 
-## Getting Started with Hadoop
 
-## HDFS Architecture
+# Hadoop
 
-## Map Reduce
+# Getting Started with Hadoop
 
-## YARN (MapReduce - 2)
+# HDFS Architecture
+
+# Map Reduce
+
+# YARN (MapReduce - 2)
 
 ## HIVE
-### Introduction
+## Introduction
 
-### HIVE Architecture
+## HIVE Architecture
 
-### Partitioning
+## Partitioning
+### Static Partitioning
 
-### Bucketing
+### Dynamic Partitioning
 
-### Index
-## PIG
+## Bucketing
 
-## SQOOP
+## Index
+# PIG
+
+# SQOOP
