@@ -1,7 +1,6 @@
 # Hadoop
 
-Table of Contents
-=================
+### Table of Contents
 - [1. Hadoop](#1-hadoop)
     + [Prerequisites](#prerequisites)
 - [2. Getting Started with Hadoop](#2-getting-started-with-hadoop)
