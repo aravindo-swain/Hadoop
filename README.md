@@ -1,3 +1,19 @@
+- [Hadoop](#hadoop)
+    + [Prerequisites](#prerequisites)
+- [Getting Started with Hadoop](#getting-started-with-hadoop)
+- [HDFS Architecture](#hdfs-architecture)
+- [Map Reduce](#map-reduce)
+- [YARN (MapReduce - 2)](#yarn--mapreduce---2-)
+- [Hive](#hive)
+- [Introduction](#introduction)
+  * [HIVE Architecture](#hive-architecture)
+  * [Partitioning](#partitioning)
+    + [Static Partitioning](#static-partitioning)
+    + [Dynamic Partitioning](#dynamic-partitioning)
+  * [Bucketing](#bucketing)
+  * [Index](#index)
+- [PIG](#pig)
+- [SQOOP](#sqoop)
 
 # Hadoop
 ### Prerequisites
