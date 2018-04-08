@@ -53,7 +53,7 @@ In this tutorial we will briefly discuss how to use Apache Hive and HQL (Hive Qu
 ### 6.3.1. Static Partitioning
 
 ### 6.3.2. Dynamic Partitioning
-```
+```sh
 set hive.exec.dynamic.partition=true;
 set hive.exec.dynamic.partition.mode=nonstrict;
 ```
