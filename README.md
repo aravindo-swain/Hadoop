@@ -7,6 +7,11 @@
   * Hands on with any  Linux Operating Systems and commands
 
 # Getting Started with Hadoop
+Hadoop is an open-source framework that allows to store and process huge amount of data in a distributed environment across clusters of cheap or commodity hardware. Hadoop is designed to scale up from single servers to thousands of servers, each offering local computation and storage. It is highly fault-tolerant.
+
+Hadoop consists of the below two modules.
+  * HDFS (Hadoop Distributed File System)
+  * MapReduce
 
 # HDFS Architecture
 
