@@ -1,6 +1,7 @@
-##FirstMapReduceApp
+## FirstMapReduceApp
 
-Problem : We are given a tab separated file containing details of player
+Problem : We are given a details of player with their score in each match. We need to find out total runs scored by a player.
+
 Dataset : The dataset is a tab separated file with the below details
 
 | Plaayer Name | Run | Ball Faced | 6s | 4s | Time | Average |
