@@ -19,6 +19,7 @@
 - [8. SQOOP](#8-sqoop)
 - [9. HBase](#9-hbase)
 - [10. Oozie](#10-oozie)
+- [Hadoop Framework Code Setup](#hadoop-framework-code-setup)
 
 # 1. Hadoop
 ### Prerequisites
@@ -70,3 +71,33 @@ set hive.exec.dynamic.partition.mode=nonstrict;
 # 9. HBase
 
 # 10. Oozie
+
+# Hadoop Framework Code Setup
+
+### Pre-requisite
+* Java 1.8.x or later
+* Maven-3.x.x or later
+
+1. Download the source zip file from the below link. Choose the version you want.
+http://www-eu.apache.org/dist/hadoop/core/
+
+2. Extract the tar.gz file. and the extracted directory is your hadoop base directory.
+
+3. Install the protobuf compiler by executing any of the below command.
+```sh
+sudo apt-get install protobuf-compiler -y
+sudo apt install protobuf-compiler
+```
+4. Goto hadoop-maven-plugins directory and build the project.
+```sh
+cd hadoop-maven-plugins
+mvn install
+```
+
+5. Come back to hadoop base directory and build the hadoop project.
+```sh
+cd..
+mvn clean package install -DskipTests
+```
+## Importing code to eclipse.
+
