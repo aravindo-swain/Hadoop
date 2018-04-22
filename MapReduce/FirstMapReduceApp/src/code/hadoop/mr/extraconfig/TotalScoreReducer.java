@@ -1,4 +1,4 @@
-package code.hadoop.mr;
+package code.hadoop.mr.extraconfig;
 
 import java.io.IOException;
 

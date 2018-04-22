@@ -1,10 +1,13 @@
-package code.hadoop.mr;
+package code.hadoop.mr.ioformat;
 
 import java.io.IOException;
 
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapred.SequenceFileOutputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
@@ -13,6 +16,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 /**
  * Driver class to find total score by a player
+ * This is with more configuration parameters
  * 
  * @author aravind
  *
@@ -38,10 +42,18 @@ public class TotalScoreDriver {
 	myJob.setOutputKeyClass(IntWritable.class);
 
 	myJob.setInputFormatClass(TextInputFormat.class);
-	myJob.setOutputFormatClass(TextOutputFormat.class);
-
+	//myJob.setOutputFormatClass(TextOutputFormat.class);
+	//myJob.setOutputFormatClass(SequenceFileOutputFormat.class);
+	
 	FileInputFormat.addInputPath(myJob, new Path(args[0]));
 	FileOutputFormat.setOutputPath(myJob, new Path(args[1]));
+	
+	//Delete the output directory, if already exists
+	FileSystem dfs = FileSystem.get(new Configuration());
+	dfs.deleteOnExit(new Path(args[1]));
+	
+	// Set required number of Reducers
+	myJob.setNumReduceTasks(4);
 
 	// Run the Job
 	myJob.waitForCompletion(true);
