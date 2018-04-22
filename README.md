@@ -81,7 +81,7 @@ set hive.exec.dynamic.partition.mode=nonstrict;
 1. Download the source zip file from the below link. Choose the version you want.
 http://www-eu.apache.org/dist/hadoop/core/
 
-2. Extract the tar.gz file. and the extracted directory is your hadoop base directory.
+2. Extract the hadoop-<version>-src.tar.gz  file. and the extracted directory is your hadoop base directory.
 
 3. Install the protobuf compiler by executing any of the below command.
 ```sh
