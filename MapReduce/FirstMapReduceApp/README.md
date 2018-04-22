@@ -1,8 +1,8 @@
 ## FirstMapReduceApp
 
-Problem : We are given a details of player with their score in each match. We need to find out total runs scored by a player.
+**Problem** : We are given a details of player with their score in each match. We need to find out total runs scored by a player.
 
-Dataset : The dataset is a tab separated file with the below details
+**Dataset** : The dataset is a tab separated file with the below details
 
 you can find the dataset inside resources folder. First upload this to your HDFS then try running this code.
 
